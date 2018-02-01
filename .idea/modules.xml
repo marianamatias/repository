@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://C:\Users\Bura\StudioProjects\repository\M2.iml" filepath="C:\Users\Bura\StudioProjects\repository\M2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/repository.iml" filepath="$PROJECT_DIR$/repository.iml" />
       <module fileurl="file://$PROJECT_DIR$/repository.iml" filepath="$PROJECT_DIR$/repository.iml" />
     </modules>
   </component>
