@@ -1,27 +1,55 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+defaultTasks 'jar'
 
-buildscript {
-    
-    repositories {
-        google()
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
-        
+apply plugin: 'java'
 
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+apply plugin: 'findbugs'
+
+apply plugin: 'pmd'
+
+apply plugin: 'application'
+
+//Define a simple task ourselves
+task hello << {
+    println 'Heyyy its team 72!!'
+}
+
+//Define a simple task that depends on another task
+task intro(dependsOn: hello) << {
+    println 'We made a gradle file'
+}
+
+task runp1(dependsOn:build)<< {
+    mainClassName = "edu.gatech.oad.antlab.pkg1.AntLabMain"
+}
+
+
+//Define another task
+task task2 << {
+    println 'AntLabMain'
+}
+
+//set up some variables
+sourceCompatibility = 1.8
+version = '1.0'
+mainClassName='edu.gatech.oad.antlab.pkg1.AntLabMain'
+
+//Define the contents of the jar file
+jar  {
+    manifest {
+        attributes  'Implementation-Title' : 'Gradle Quickstart' ,
+                'Implementation-Version' : version,
+                'Main-Class' : 'edu.gatech.oad.antlab.pkg1.AntLabMain',
+                'Class-Path': 'app/libs/resources.jar'
     }
 }
 
-allprojects {
-    repositories {
-        google()
-        jcenter()
-    }
+dependencies {
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '3.6.7.Final'
+    testCompile group: 'junit', name: 'junit', version: '4.+'
 }
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
+//setup a location for repositories of any libraries that need to be downloaded
+repositories {
+    mavenCentral()
 }
+
