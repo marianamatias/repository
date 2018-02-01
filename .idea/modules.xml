@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://C:\Users\Bura\StudioProjects\repository\M2.iml" filepath="C:\Users\Bura\StudioProjects\repository\M2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/repository.iml" filepath="$PROJECT_DIR$/repository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" />
+      <module fileurl="file://C:\Users\kcove\Documents\CS 2340\repository\app\app.iml" filepath="C:\Users\kcove\Documents\CS 2340\repository\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/repository.iml" filepath="$PROJECT_DIR$/.idea/modules/repository.iml" />
+      <module fileurl="file://C:\Users\kcove\Documents\CS 2340\repository\repository.iml" filepath="C:\Users\kcove\Documents\CS 2340\repository\repository.iml" />
     </modules>
   </component>
 </project>
